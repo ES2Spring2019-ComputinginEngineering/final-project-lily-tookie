@@ -15,20 +15,23 @@ Through micro:bit user interface, Morse Code with Micro:bits demonstrates transl
 
 ## File List 
 ### Final Project.py
--Prompts user to input a decoded message.
--For each letter or number, def encode_in_morse takes message input, translates with dictionary input, and returns decoded_message.
--For each letter or number in message, def teaching_morse takes decoded_message input and returns teaching_code, a sequence of “A”s and “B”s that correlates to input required to transmit the message via micro:bits.
-### Transmitter.Project.Final.py
--Flashes to micro:bit transmitting morse code message.
+Prompts user to input a decoded message.
 
--Using a “while” loop, code allows micro:bit to transmit messages via the radio function. Dots transmit when “button a” is pressed, dashes transmit when “button b” is pressed, and the end of letters transmit when “button a” and “button b” are pressed simultaneously as signaled by the image of a target. Code accounts for human error with a “buffer time” when “button a” and “button b” are supposed to be pressed “simultaneously.” Buffer time allows for 100 milliseconds to pass in between engaging “button a” and “button b.”
+For each letter or number, def encode_in_morse takes message input, translates with dictionary input, and returns decoded_message.
+
+For each letter or number in message, def teaching_morse takes decoded_message input and returns teaching_code, a sequence of “A”s and “B”s that correlates to input required to transmit the message via micro:bits.
+
+### Transmitter.Project.Final.py
+Flashes to micro:bit transmitting morse code message.
+
+Using a “while” loop, code allows micro:bit to transmit messages via the radio function. Dots transmit when “button a” is pressed, dashes transmit when “button b” is pressed, and the end of letters transmit when “button a” and “button b” are pressed simultaneously as signaled by the image of a target. Code accounts for human error with a “buffer time” when “button a” and “button b” are supposed to be pressed “simultaneously.” Buffer time allows for 100 milliseconds to pass in between engaging “button a” and “button b.”
 
 ### Receiver.Project.py
--Flashes to micro:bit receiving morse code message.
+Flashes to micro:bit receiving morse code message.
 
--The program provides processing ability to micro:bit receiver via the radio function. As series of dots and dashes appear on the microbit screen def display_letter takes letter_string input from transmitted message. Function then translates and updates letter_string before returning and displaying letter_string with each corresponding English letter or Arabic numeral.
+The program provides processing ability to micro:bit receiver via the radio function. As series of dots and dashes appear on the microbit screen def display_letter takes letter_string input from transmitted message. Function then translates and updates letter_string before returning and displaying letter_string with each corresponding English letter or Arabic numeral.
 
--Letters and numbers form from DIY images, created by adjusting the brightness of the pixels on the 5x5 matrix of the micro:bit screen to display the 26 letters of the English alphabet and the 10 Arabic numerals.
+Letters and numbers form from DIY images, created by adjusting the brightness of the pixels on the 5x5 matrix of the micro:bit screen to display the 26 letters of the English alphabet and the 10 Arabic numerals.
 
 ## Features descriptions 
 ### Radio Function: required to obtain connection between 2 micro:bits.
