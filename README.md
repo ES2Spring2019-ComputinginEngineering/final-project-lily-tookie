@@ -1,4 +1,4 @@
-# - .... .       ..-. .. -. .- .-.. .
+# - .... . ..-. .. -. .- .-.. .
 ## Morse Code with Micro:bits!
 
 Through micro:bit user interface, Morse Code with Micro:bits demonstrates translation to an encoded scheme denoted by signal durations of dots and dashes. The code converts the message from English to morse code and displays how the user can transmit the message one micro:bit to another. Mu editor transmits morse code message between 2 micro:bits.
