@@ -1,6 +1,4 @@
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import colors
 
 
 def file_to_list():
@@ -31,7 +29,7 @@ def file_to_list():
     x = []
     y = []
     z = []
-    fin = open('words.txt') #how to open file
+    fin = open('AliceInWonderland.txt') #how to open file
     for line in fin:
         word = line[:len(line)-1]
         for letter in word:
@@ -96,12 +94,12 @@ a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z = f
 alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 lengths = [len(a), len(b), len(c), len(d), len(e), len(f), len(g), len(h), len(i), len(j), len(k), len(l), len(m), len(n), len(o), len(p), len(q), len(r), len(s), len(t), len(u), len(v), len(w), len(x), len(y), len(z)]
 
-print(lengths)
-print(alphabet)
+#print(lengths)
+#print(alphabet)
 
 def graphing(lengths, alphabet):
     plt.figure
-    plt.bar(alphabet, lengths)
+    plt.bar(alphabet, lengths, color = ['darkred', 'firebrick', 'indianred', 'lightcoral', 'coral','darkorange', 'orange', 'gold', 'yellow', 'greenyellow', 'palegreen', 'lime', 'limegreen', 'mediumspringgreen', 'cyan', 'deepskyblue', 'dodgerblue', 'royalblue', 'blue', 'darkblue', 'darkslateblue', 'rebeccapurple', 'darkorchid', 'fuchsia', 'orchid', 'pink'])
     plt.show()
 
 graphing(lengths, alphabet)
