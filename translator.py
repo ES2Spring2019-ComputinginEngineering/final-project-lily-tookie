@@ -11,11 +11,10 @@ Created on Wed Apr 17 15:08:44 2019
 import string
 
 
-message = ' '
-
 print("Welcome to Teaching Morse Code! Please type the message you wish to encode.")
 print("The message may only contain letters, numbers, and spaces.")
 
+message = ' '
 message = input("Please type your secret message: ") 
 
 dictionary = {"97" : ".-", "98" : "-...", "99" : "-.-.", "100": "-..", "101" : ".",
