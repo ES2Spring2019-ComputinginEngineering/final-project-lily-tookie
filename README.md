@@ -4,18 +4,16 @@
 Through micro:bit user interface, Morse Code with Micro:bits demonstrates translation to an encoded scheme denoted by signal durations of dots and dashes. The code converts the message from English to morse code and displays how the user can transmit the message one micro:bit to another. Mu editor transmits morse code message between 2 micro:bits. Through descriptive analysis, the code also analyzes the appearances of letters in a book.
 
 ## Instructions
-### Teaching Code
-1. Open translator.py in python and input a message.
-     *(translator.py contains only the teaching code from spyder. Open the other two files for flashing on the mircobit)*
-2. Message will be displayed in morse code and in “As” and “Bs” required to transmit via micro:bit.
+
+1. Open main.py in python and run driver function, input message when prompted.
+     *(main.py contains only the teaching and analysis code from spyder. Open the other two files for flashing on the mircobit)*
+2. Message will be displayed in driver in morse code and in “As” and “Bs” required to transmit via micro:bit.
 3. Open Transmitter.Project.Final.py and Receiver.Project.py in Mu editor.
 4. Connect the microbits to the computer with the USB port.
 5. Flash Transmitter.Project.Final.py onto 1st micro:bit, flash Receiver.Project.py onto 2nd micro:bit.
 6. Type message in sequence of “As” and “Bs” from Final Project.py which correspond to “button a” and “button b” on the micro:bit. Signal the end of each letter by pressing “button a” and “button b” simultaneously.
 7. Watch 2nd microbit receive letters as dots and dashes and translate each to the equivalent English letter and Arabic numeral.
 
-### Analysis Code
-1. Run descriptive statistics.py
 
 ## File List 
 ### Translator.py
