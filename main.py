@@ -8,7 +8,7 @@ Created on Wed May  1 12:56:00 2019
 
 
 from descriptive_statistics import file_to_list, graphing, finding_stats
-from translator.py import encode_in_morse, teaching_morse
+from translator import encode_in_morse, teaching_morse
 
 
 #Descriptive Statistics
