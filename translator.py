@@ -22,7 +22,7 @@ import string
 print("Welcome to Teaching Morse Code! Please type the message you wish to encode.")
 print("The message may only contain letters, numbers, and spaces.")
 
-message = ''
+message = ' '
 message = input("Please type your secret message: ") 
 
 
@@ -77,10 +77,10 @@ def teaching_morse(decoded_message):
         
     return teaching_code
             
-#decoded_message = encode_in_morse(message)   
-#print(decoded_message) 
-#teaching_message = teaching_morse(decoded_message) 
-#print(teaching_message)
+decoded_message = encode_in_morse(message)   
+print(decoded_message) 
+teaching_message = teaching_morse(decoded_message) 
+print(teaching_message)
 
         
         

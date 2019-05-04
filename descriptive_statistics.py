@@ -123,8 +123,3 @@ def finding_stats(lengths, alphabet):
     
     print("four symbol letters: Q, Z, Y, C, X, B, J, P, L, F, V, H")
     print("frequency of four symbol letters: " + str((lengths[16] + lengths[25] + lengths[24] + lengths[2] + lengths[23] + lengths[1] + lengths[9] + lengths[15] + lengths[11] + lengths[5] + lengths[21] + lengths[7])/12))
-
-#
-#alphabet, lengths = file_to_list()
-#graphing(lengths, alphabet) 
-#finding_stats(lengths, alphabet)

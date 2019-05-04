@@ -21,7 +21,7 @@ finding_stats(lengths, alphabet)
 print("Welcome to Teaching Morse Code! Please type the message you wish to encode.")
 print("The message may only contain letters, numbers, and spaces.")
 
-message = ' '
+message = ''
 message = input("Please type your secret message: ")
 
 decoded_message = encode_in_morse(message)   
