@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
+Created on Sat May  4 08:14:49 2019
+
+@author: Lily
+"""
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
 Created on Wed Apr 17 15:08:44 2019
 
 @author: Lily
@@ -17,7 +25,9 @@ print("The message may only contain letters, numbers, and spaces.")
 message = ' '
 message = input("Please type your secret message: ") 
 
-dictionary = {"97" : ".-", "98" : "-...", "99" : "-.-.", "100": "-..", "101" : ".",
+
+def encode_in_morse(message):
+    dictionary = {"97" : ".-", "98" : "-...", "99" : "-.-.", "100": "-..", "101" : ".",
     "102": "..-.",
     "103" : "--.",
     "104" : "....",
@@ -41,9 +51,6 @@ dictionary = {"97" : ".-", "98" : "-...", "99" : "-.-.", "100": "-..", "101" : "
     "122" : "--..", "48" : "-----", "49" : ".----", "50" : "..---", "51" : "...--", 
     "52" : "....-", "53" : ".....", "54" : "-....", "55" : "--...", "56" : "---..",
     "57" : "----.", "32" : " "}
-
-
-def encode_in_morse(message, dictionary):
     decoded_message = ' '
     for letter in message:
         if letter in string.ascii_uppercase:
@@ -70,7 +77,7 @@ def teaching_morse(decoded_message):
         
     return teaching_code
             
-decoded_message = encode_in_morse(message, dictionary)   
+decoded_message = encode_in_morse(message)   
 print(decoded_message) 
 teaching_message = teaching_morse(decoded_message) 
 print(teaching_message)
