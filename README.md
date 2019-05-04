@@ -38,7 +38,7 @@ The program provides processing ability to micro:bit receiver via the radio func
 Letters and numbers form from DIY images, created by adjusting the brightness of the pixels on the 5x5 matrix of the micro:bit screen to display the 26 letters of the English alphabet and the 10 Arabic numerals.
 
 ### Descriptive Statistics.py
-The file_to_list function parses through each word of AliceinWonderland.txt and adds the word to a letter’s list every time it is used. For example, the word “class” would be put in the “c” list, the “l” list, and the “a” list once but in the “s” list twice. it returns each letter’s list length.
+The file_to_list function parses through each word of AliceInWonderland.txt and adds the words to a letter’s list every time it is used. For example, the word “class” would be put in the “c” list, the “l” list, and the “a” list once but in the “s” list twice. It returns each letter’s list length.
 
 The graphing function takes the letter’s list length and the alphabet inputs and plots the data in a bar graph.
 
