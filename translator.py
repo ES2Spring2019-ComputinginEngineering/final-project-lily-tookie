@@ -76,11 +76,6 @@ def teaching_morse(decoded_message):
         teaching_code = teaching_code + teaching  
         
     return teaching_code
-            
-decoded_message = encode_in_morse(message)   
-print(decoded_message) 
-teaching_message = teaching_morse(decoded_message) 
-print(teaching_message)
 
         
         
