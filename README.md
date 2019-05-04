@@ -14,7 +14,7 @@ Through micro:bit user interface, Morse Code with Micro:bits demonstrates transl
 7. Watch 2nd microbit receive letters as dots and dashes and translate each to the equivalent English letter and Arabic numeral.
 
 ## File List 
-### Main.py
+### Translator.py
 Prompts user to input a decoded message.
 
 For each letter or number, def encode_in_morse takes message input, translates with dictionary input, and returns decoded_message.
