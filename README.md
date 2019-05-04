@@ -37,6 +37,13 @@ The program provides processing ability to micro:bit receiver via the radio func
 
 Letters and numbers form from DIY images, created by adjusting the brightness of the pixels on the 5x5 matrix of the micro:bit screen to display the 26 letters of the English alphabet and the 10 Arabic numerals.
 
+### Descriptive Statistics.py
+The file_to_list function parses through each word of AliceinWonderland.txt and adds the word to a letter’s list every time it is used. For example, the word “class” would be put in the “c” list, the “l” list, and the “a” list once but in the “s” list twice. it returns each letter’s list length.
+
+The graphing function takes the letter’s list length and the alphabet inputs and plots the data in a bar graph.
+
+The finding_stats function takes the letter’s list length and the alphabet inputs and prints the most frequently appearing letter, the least frequently appearing letter, the average appearance of a one symbol morse code letter, the average appearance of a two symbol morse code letter, the average appearance of a three symbol morse code letter, and the average appearance of a four symbol morse code letter.
+
 ## Features descriptions 
 ### Radio Function: required to obtain connection between 2 micro:bits.
 The most fundamental requirement for a network, an interconnected system, is some sort of connection that allows a signal to get from one device to the other. Thanks to the radio module, information can be encoded and broadcast via radio waves, a type of electromagnetic radiation modulated by a transmitter. The address (the radio channel) defaults to the BBC micro:bit channel and remains compatible with Python programs when called on with “radio.on().” The send function broadcasts strings while the receive function returns the oldest message from the queue as a string, making space for a new incoming message. If the message queue fills up, then new incoming messages are ignored.
