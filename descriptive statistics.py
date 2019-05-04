@@ -5,7 +5,6 @@ alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N"
 
 
 def file_to_list():
-    """reads lines from a file and builds a list using append."""
     a = []
     b = []
     c = []
@@ -89,11 +88,9 @@ def file_to_list():
             elif letter == "z":
                 z.append(word)
     fin.close()
-    return a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+    lengths = [len(a), len(b), len(c), len(d), len(e), len(f), len(g), len(h), len(i), len(j), len(k), len(l), len(m), len(n), len(o), len(p), len(q), len(r), len(s), len(t), len(u), len(v), len(w), len(x), len(y), len(z)]
+    return lengths
 
-a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z = file_to_list()
-
-lengths = [len(a), len(b), len(c), len(d), len(e), len(f), len(g), len(h), len(i), len(j), len(k), len(l), len(m), len(n), len(o), len(p), len(q), len(r), len(s), len(t), len(u), len(v), len(w), len(x), len(y), len(z)]
 
 def graphing(lengths, alphabet):
     plt.figure
@@ -118,8 +115,9 @@ def finding_stats(lengths, alphabet):
     print("four symbol letters: Q, Z, Y, C, X, B, J, P, L, F, V, H")
     print("frequency of four symbol letters: " + str((lengths[16] + lengths[25] + lengths[24] + lengths[2] + lengths[23] + lengths[1] + lengths[9] + lengths[15] + lengths[11] + lengths[5] + lengths[21] + lengths[7])/12))
 
+
+lengths = file_to_list()
 graphing(lengths, alphabet) 
-   
 finding_stats(lengths, alphabet)
 
    
